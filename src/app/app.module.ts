@@ -9,6 +9,8 @@ import { InicioComponent } from './shopping/inicio/inicio.component';
 import { TiendaComponent } from './shopping/tienda/tienda.component';
 import { NosotrosComponent } from './shopping/nosotros/nosotros.component';
 import { ContactanosComponent } from './shopping/contactanos/contactanos.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './shared/component/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import { ContactanosComponent } from './shopping/contactanos/contactanos.compone
     TiendaComponent,
     NosotrosComponent,
     ContactanosComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],
